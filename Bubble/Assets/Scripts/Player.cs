@@ -106,7 +106,6 @@ public class Player : MonoBehaviour {
 
             //JUMP CHARGE & JUMP RELEASE
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)) {
-                //Debug.Log("Pressed up arrow. Grounded: " + Grounded);
                 if (Grounded > 0) {
                     playerAnimator.SetBool("PreJumping", true);
                 }
@@ -203,11 +202,11 @@ public class Player : MonoBehaviour {
         }
         if (collision.gameObject.tag == "GroundFake") {
             //Debug.Log("touching GroundFake");
-            showShadow = 0;
+            showShadow--;
         }
         if (collision.gameObject.tag == "Ground") {
-            showShadow = 5;
-            Debug.Log("showShadow:" + showShadow);
+            showShadow++;
+            //Debug.Log("showShadow:" + showShadow);
             if (showShadow > 5) showShadow = 5;
         }
 
@@ -224,7 +223,6 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "MamaButterfly" && !followButterfly) {
-            //transform.position.Set
             giantButterfly = collision.gameObject;
             giantButterfly.GetComponent<Animator>().Play("flapping-mamaButterfly");
             giantButterfly.GetComponent<CapsuleCollider2D>().enabled = false;

@@ -7,11 +7,10 @@ public class Butterfly : MonoBehaviour {
     private SpriteRenderer sr;
     private AudioSource wink;
 
-    private int destroyTimer = 0;
+    private int destroyTimer = 0;   //Butterfly disappear
     public bool bodyShadow = false;
     private bool isFlying = false;
 
-    // Use this for initialization
     void Start () {
         sr = GetComponent<SpriteRenderer>();
         wink = GetComponent<AudioSource>();
@@ -24,7 +23,6 @@ public class Butterfly : MonoBehaviour {
         }
     }
 	
-	// Update is called once per frame
 	void Update () {
 
         if (butterflyAnimator.GetBool("Flapping") == true) {
@@ -33,18 +31,16 @@ public class Butterfly : MonoBehaviour {
         if(destroyTimer == 1) {
             wink.Play();
         }
-        if(destroyTimer >= 315) {
+        if(destroyTimer >= 315) {   //Destroy butterfly in 315 frames
             Destroy(this.gameObject);
         }
     }
 
 private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
+        if (collision.gameObject.tag == "Player") {     //If player touches butterfly
             isFlying = true;
             this.transform.parent = null;
             //Debug.Log("Butterfly fly fly");
-            butterflyAnimator.SetBool("butterfly_idle", false);
-            butterflyAnimator.SetBool("butterfly_idle2", false);
             butterflyAnimator.SetBool("Flapping", true);
             
         }

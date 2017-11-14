@@ -9,15 +9,12 @@ public class SnailBox : MonoBehaviour {
     private int destroyTimer = 1;
     private bool trigger = false;
 
-    // Use this for initialization
     void Start () {
         pop = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
         snailAnimator.Play("snail_idle");
     }
 	
-
-	// Update is called once per frame
 	void Update () {
         if (trigger == true) {
             destroyTimer--;
@@ -28,7 +25,6 @@ public class SnailBox : MonoBehaviour {
             snailAnimator.Play("snail_idle");
         }
     }
-
 
 
     private void OnTriggerEnter2D(Collider2D collision) {

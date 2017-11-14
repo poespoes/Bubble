@@ -7,10 +7,10 @@ public class FireflyBackground : MonoBehaviour {
     public bool fireflyLeft = true;
     private Animator anim;
 
-    // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
 
+        //FIREFLY ANIMATION (fly from left and right)
         if (fireflyLeft) {
             anim.Play("firefly_background", 0, 0);
         } else {
@@ -18,7 +18,6 @@ public class FireflyBackground : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}

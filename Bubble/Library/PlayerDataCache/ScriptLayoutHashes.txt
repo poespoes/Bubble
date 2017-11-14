@@ -14,7 +14,6 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 3c5388e43bfbfbe4e7c860e945fc9f27 Assembly-CSharp.dll:BlendModes.CameraOverlay
-dd702ac26d67065c3b593b6ce16aa725 Assembly-CSharp.dll:.ScoreManager
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -145,9 +144,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 abdc00fe1f6261fd2e4472f687f137a6 Assembly-CSharp.dll:.Player
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FadeMusic
 89f9152e920e113c3e4b2c206fcb59e3 Assembly-CSharp.dll:.FireflyBackground
 f7541ae03e62380fc17a6b193366c17e Assembly-CSharp.dll:.PlayerShadow
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:BlendModes.DemoBlendModePicker
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CollisionScript
 189a74f2b133930d8508afb70e8313e1 Assembly-CSharp.dll:.LeafSFX
