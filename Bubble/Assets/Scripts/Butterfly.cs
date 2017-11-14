@@ -36,6 +36,10 @@ public class Butterfly : MonoBehaviour {
         }
     }
 
+    public void destroybutterfly() {
+        Destroy(this.gameObject);   //For animation add event
+    }
+
 private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {     //If player touches butterfly
             isFlying = true;
